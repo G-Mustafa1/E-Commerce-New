@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>E-commerce</title>
    <!-- font awesome link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- Bootstrap css link -->
@@ -13,7 +13,7 @@
 </head>
 <body>
    <!-- Navbar start -->
-   <nav class="navbar navbar-expand-lg navbar-light py-3 bg-primary px-3">
+   <nav class="navbar navbar-expand-lg navbar-light py-3 bg-primary px-3 position-fixed">
       <div class="container-fluid">
          <a class="navbar-brand fs-2" style="color: aliceblue;" href="#">E-Commerce Web</a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -45,24 +45,17 @@
    </nav>
    <!-- Navbar-End -->
 
-
    <!--  cart start -->
    <div class="cart">
+      <div class="con">
+         <i id="con" class="fa-solid fa-xmark"></i>
+      </div>
       <h1>Your Cart</h1>
       <div class="cart1">
-         <!-- <div class="cart-item">
-            <div class="div"> 
-               <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" alt="">
-               <div>`${iem.title} - $${item.price}</div>
-               <div>
-                  <button  class="btn btn-danger">Remove</button>
-               </div>
-               </div>
-         </div> -->
       </div>
       <div class="cart2">
-         <button>Total</button>
-         <button>By Now</button>
+         <button id="total" class="btn btn-primary">Total</button>
+         <button class="btn btn-success">By Now</button>
       </div>
    </div>
    <!-- cart start -->
