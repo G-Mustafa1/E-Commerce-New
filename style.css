@@ -1,3 +1,9 @@
+.navbar{
+   z-index: 999;
+   width: 100%;
+   margin-bottom: 20px;
+   /* position: fixed; */
+}
 .navbar a{
    color: aliceblue;
 }
@@ -12,7 +18,7 @@ nav a{
    background-color: #000;
 }
 .cardes{
-   margin-top: 20px;
+   margin-top: 90px;
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
@@ -122,32 +128,82 @@ nav a{
 .cart{
    width: 400px;
    height: 100vh;
+   padding: 10px 30px;
    position: fixed;
    left: 100%;
-   z-index: 1;
+   z-index: 2;
    transition: 0.5s;
    padding: 10px 0px;
    background: linear-gradient(13deg, rgba(10, 0, 0, 0.274), rgba(19, 11, 11, 0.308));
    backdrop-filter: blur(30px);
 }
+.cart h1{
+   text-align: center;
+   padding-top: 100px;
+   padding-bottom: 10px;
+   /* padding: 70px 0px; */
+
+}
+.cart-item{
+   /* background-color: #fff; */
+   padding: 10px 0px;
+   margin-bottom: 10px;
+   border-bottom: 1px solid #000;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   /* margin: 0px; */
+}
+.cart1{
+   height: 63vh;
+   overflow-y: scroll;
+}
+.cart1::-webkit-scrollbar{
+   /* background-color: #0d6efd */
+   width: 20px;
+   /* height: 0px; */
+}
+
 .cart2{
    display: flex;
    position: fixed;
-   bottom: 80px;
+   bottom: 0px;
    /* bottom: 0px; */
+}
+.div h6{
+   margin: 0px;
+   text-transform: capitalize;
+   color: #fff;
 }
 .div img{
    width: 50px;
 }
 .div{
    display: flex;
-   justify-content: center;
+   justify-content: space-evenly;
+   /* justify-content: center; */
    align-items: center;
    /* flex-direction: column; */
 }
 .cart2 button{
    width: 200px;
    height: 50px;
+   /* background-color: #0d6efd; */
+   /* color: #fff; */
+   /* border: 1px solid #fff; */
+   /* outline: none; */
+
+}
+.con{
+   position: relative;
+   /* left: ; */
+}
+.cart h2 {
+   text-align: center;
+}
+.con i{
+   position: absolute;
+   font-size: 30px;
+   top: 100px;
+   left: 20px;
 }
 .active .cart{
    left: calc(100% - 400px);
